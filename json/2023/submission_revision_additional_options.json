@@ -1,24 +1,24 @@
 {
-    supplementary_material: {
-        description: For appendices. Upload a PDF file that ends with .pdf,
-        order: 10,
-        value-file: {
-            fileTypes: [
-                pdf
+    "supplementary_material": {
+        "description": "For appendices. Upload a PDF file that ends with .pdf",
+        "order": 10,
+        "value-file": {
+            "fileTypes": [
+                "pdf"
             ],
-            size: 50
+            "size": 50
         },
-        required: false
+        "required": false
     },
-    other_supplementary_material: {
-        description: Other supplementary material (e.g., data, code). All supplementary material must be anonymized, self-contained, and zipped into a single file. The maximum file size is 50MB.,
-        order: 11,
-        value-file: {
-            fileTypes: [
-                zip
+    "other_supplementary_material": {
+        "description": "Other supplementary material (e.g., data, code). All supplementary material must be anonymized, self-contained, and zipped into a single file. The maximum file size is 50MB.",
+        "order": 11,
+        "value-file": {
+            "fileTypes": [
+                "zip"
             ],
-            size: 50
+            "size": 50
         },
-        required: false
+        "required": false
     }
 }
