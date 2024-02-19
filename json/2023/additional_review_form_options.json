@@ -1,0 +1,153 @@
+{
+    Q1 Summary and contributions: {
+        order: 1,
+        value-regex: [\S\s]{0,2000},
+        description: Please summarize the paper's motivation and key contributions in a few lines.,
+        required: true,
+        markdown: true
+    },
+    Q2 Assessment of the paper: {
+        order: 2,
+        value: More detailed information regarding each of these aspects is given below:,
+        required: true
+    },
+    Q2(1) Originality/Novelty: {
+        order: 3,
+        value-radio: [
+            4: Excellent: The main ideas of the paper are ground-breaking.,
+            3: Good: The paper makes non-trivial advances over the current state-of-the-art.,
+            2: Fair: The paper contributes some new ideas.,
+            1: Poor: The main ideas of the paper are either not novel or only incremental.
+        ],
+        description: How novel are the concepts, problems addressed, or methods introduced in the paper?,
+        required: true
+    },
+    Q2(2) Significance/Impact: {
+        order: 4,
+        value-radio: [
+            4: Excellent: The paper is likely to have a high impact across more than one subfield of AI.,
+            3: Good: The paper is likely to have high impact within a subfield of AI OR moderate impact across more than one subfield of AI.,
+            2: Fair: The paper is likely to have a moderate impact within a subfield of AI.,
+            1: Poor: The paper is likely to have minimal impact on AI.
+        ],
+        description: How do you rate the likely impact of the paper on the UAI research community?,
+        required: true
+    },
+    Q2(3) Correctness/Technical quality: {
+        order: 5,
+        value-radio: [
+            4: Excellent: I am confident that the paper is technically sound, and I have carefully checked the details.,
+            3: Good: The paper appears to be technically sound, but I have not carefully checked the details.,
+            2: Fair: The paper has minor, easily fixable, technical flaws that do not impact the validity of the main results.,
+            1: Poor: The paper has major technical flaws.
+        ],
+        description: Is the paper technically sound?,
+        required: true
+    },
+    Q2(4) Quality of experiments (Optional): {
+        order: 6,
+        value-radio: [
+            4: Excellent: The experimental evaluation is comprehensive and the results are compelling.,
+            3: Good: The experimental evaluation is adequate, and the results convincingly support the main claims.,
+            2: Fair: The experimental evaluation is weak: important baselines are missing, or the results do not adequately support the main claims.,
+            1: Poor: The experimental evaluation is flawed or the results fail to adequately support the main claims.
+        ],
+        description: If applicable, are the main claims well supported by experiments? ,
+        required: false
+    },
+    Q2(5) Reproducibility: {
+        order: 7,
+        value-radio: [
+            4: Excellent: key resources (e.g. proofs, code, data) are available and key details (e.g. proof sketches, experimental setup) are comprehensively described for competent researchers to confidently and easily reproduce the main results. ,
+            3: Good: key resources (e.g. proofs, code, data) are available and key details (e.g. proofs, experimental setup) are sufficiently well-described for competent researchers to confidently reproduce the main results.,
+            2: Fair: key resources (e.g. proofs, code, data) are unavailable but key details (e.g. proof sketches, experimental setup) are sufficiently well-described for an expert to confidently reproduce the main results.,
+            1: Poor: key details (e.g. proof sketches, experimental setup) are incomplete/unclear, or key resources (e.g. proofs, code, data) are unavailable.
+        ],
+        description: Are the results in the paper easily reproducible?  (e.g. experimental results can be replicated, theorems have full proofs),
+        required: true
+    },
+    Q2(6) Clarity of writing: {
+        order: 8,
+        value-radio: [
+            4: Excellent: The paper is well-organized and clearly written.,
+            3: Good: The paper is well organized but the presentation could be improved.,
+            2: Fair: The paper is somewhat clear, but some important details are missing or unclear.,
+            1: Poor: The paper is unclear and very hard to understand.
+        ],
+        description: Is the paper well-organized and clearly written?,
+        required: true
+    },
+    Q3 Main strengths: {
+        order: 9,
+        value-regex: [\S\s]{1,1000},
+        description: Please describe the main strengths of the work, considering the same axes as in Q2. Please mention as many main strengths as there are, but avoid minor points here.,
+        required: true,
+        markdown: true
+    },
+    Q4 Main weakness: {
+        order: 10,
+        value-regex: [\S\s]{1,1000},
+        description: Please describe the main weaknesses of the work, considering the same axes as in Q2. Please mention as many main weaknesses as there are, but avoid minor points here.,
+        required: true,
+        markdown: true
+    },
+    Q5 Detailed comments to the authors: {
+        order: 11,
+        value-regex: [\S\s]{1,200000},
+        description: Please provide constructive criticism and feedback that could help improve the work or its presentation (e.g. presentation suggestions, missing references, minor mistakes and typos or grammar improvements). You may also include questions to the author here.,
+        required: true,
+        markdown: true
+    },
+    Q6 Overall score: {
+        description: Please provide your overall evaluation of the paper, carefully weighing the reasons to accept and the reasons to reject the paper.,
+        order: 12,
+        value-radio: [
+            10: Award quality: Technically flawless paper with groundbreaking impact on one or more areas of AI, with exceptionally strong evaluation, reproducibility, and resources, and no unaddressed ethical considerations.,
+            9: Very Strong Accept: Technically flawless paper with groundbreaking impact on at least one area of AI and excellent impact on multiple areas of AI, with flawless evaluation, resources, and reproducibility, and no unaddressed ethical considerations.,
+            8: Strong Accept: Technically strong paper with novel ideas, excellent impact on at least one area of AI or high to excellent impact on multiple areas of AI, with excellent evaluation, resources, and reproducibility, and no unaddressed ethical considerations.,
+            7: Accept: Technically solid paper, with high impact on at least one sub-area of AI or moderate to high impact on more than one area of AI, with good to excellent evaluation, resources, reproducibility, and no unaddressed ethical considerations.,
+            6: Weak Accept: Technically solid, moderate to high impact paper, with no major concerns with respect to evaluation, resources, reproducibility, ethical considerations.,
+            5: Borderline accept: Technically solid paper where reasons to accept, e.g. novelty, outweigh reasons to reject, e.g. limited evaluation. Please use sparingly.,
+            4: Borderline reject: Technically solid paper where reasons to reject, e.g. lack of novelty, outweigh reasons to accept, e.g. good evaluation. Please use sparingly.,
+            3: Reject: For instance, a paper with technical flaws, weak evaluation, inadequate reproducibility, incompletely addressed ethical considerations.,
+            2: Strong Reject: For instance, a paper with major technical flaws, and/or poor evaluation, limited impact, poor reproducibility, mostly unaddressed ethical considerations.,
+            1: Very Strong Reject: For instance, a paper with trivial results, limited novelty, poor impact, or unaddressed ethical considerations.
+        ],
+        required: true
+    },
+    Q7 Justification for your score: {
+        order: 13,
+        value-regex: [\S\s]{1,1000},
+        description: Please explain in a few lines how you arrived at your overall assessment. Which aspects mentioned under main strengths and main weaknesses (Q3 & Q4) did you weigh most heavily and why?,
+        required: true,
+        markdown: true
+    },
+    Q8 Confidence in your score: {
+        order: 14,
+        description: Please rate your confidence in your assessment.,
+        value-radio: [
+            5: Very confident. I have checked all points of the paper carefully and I am an expert in this field. I am certain I did not miss any aspects that could otherwise have impacted my evaluation.,
+            4: Quite confident. I tried to check the important points carefully, and I have some expertise in this field. It is unlikely, though conceivable, that I missed some aspects that could otherwise have impacted my evaluation.,
+            3: Somewhat confident. There's a chance I missed some aspects or I am not totally confident about the topic of the paper. I did not carefully check some of the details, e.g. novelty, proof of a theorem, experimental design, or statistical validity of conclusions.,
+            2: Not very confident or my expertise only weakly overlaps with the topic of the paper. I am able to defend my evaluation of some aspects of the paper, but it is quite likely that I missed or did not understand some key details, or can't be sure about the novelty of the work.,
+            1: Not confident. My evaluation is an educated guess.
+        ],
+        required: true
+    },
+    Q9 Complying with reviewing instructions: {
+        order: 15,
+        description: I have read the UAI reviewing instructions and certify that I will comply with them. In particular, I will keep the paper and supplementary materials (including code submissions) confidential, and delete all reviewing material at the end of the review cycle. (https://auai.org/uai2023/reviewing_instructions),
+        value-radio: [
+            1: Yes.,
+            0: No.
+        ],
+        required: true
+    },
+    Q10 Ethical concerns (Optional): {
+        order: 16,
+        value-regex: [\S\s]{1,1000},
+        description: Does the submission raise potential ethical concerns? This includes methods, applications, or data that can create or reinforce unfair bias or that have a primary purpose of harm or injury. Please answer yes/no, and provide a brief explanation if your answer is yes.,
+        required: false,
+        markdown: true
+    }
+}
